@@ -1,0 +1,442 @@
+body{
+  color: black;
+  background:white;
+}
+
+.navbar{
+  font-family: Raleway !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+#contact-container{
+  margin-top:40px;
+}
+#contact-head-text{
+  font-family: "Spartan";
+  font-size: 4rem;
+  text-align: center;
+}
+
+
+
+#showpost-jumbotron{
+  margin:60px 12%;
+  width: 76%;
+}
+
+#showpost-head{
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: 'Spartan';
+  border-bottom: 1px solid black;
+  border-bottom-width:thick;
+}
+#showpost-text{
+  font-size: 1.3rem;
+  font-family: 'Raleway';
+  padding: 30px;
+
+}
+.showpost-carousel{
+  padding:30px;
+}
+
+#index-who-row{
+  margin:40px 20%;
+  width: 60%;
+}
+
+#index-who-head{
+  text-align: center;
+  font-size: 3rem;
+  padding-top:0;
+  margin-top: 0 ;
+  font-family: Raleway;
+}
+#index-who-logo{
+  padding:0;
+  margin-right: 42%;
+  margin-left:42%;
+  width:16%;
+}
+
+#index-who-text{
+  font-size:1.4rem;
+  padding: 30px 40px;
+  text-align: center;
+  font-family: Raleway !important;
+}
+
+#post-page-head{
+  margin: 30px auto;
+  padding-top:20px;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Spartan';
+}
+
+#post-row{
+  padding:20px;
+}
+
+#post-single{
+  border-radius: 5px;
+  margin:20px 0;
+  height:200px;
+  background: rgb(49, 47, 47);
+}
+
+#post-row-inside{
+  height: 200px;
+}
+
+#post-image{
+  padding: 0;
+  height:100%;
+}
+
+#post-image-inside{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+#post-text{
+  padding: 2% 2%;
+  font-family: 'Spartan', ;
+  color: white;
+  font-size: 15px;
+}
+#post-header{
+  font-size: 1.8rem;
+}
+#post-button{
+  padding: 0 2%;
+}
+/* #post-page-card-1{
+  height:240px;
+  background: #312F2F;
+  padding:0;
+  margin: 40px 0;
+  border-radius: 3%;
+}
+
+#post-page-card-2{
+  border: black 1px;
+  height:240px;
+  padding: 0;
+  margin: 0;
+}
+
+#post-page-card-img{
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#post-page-text{
+  font-family: 'Alegreya' ;
+  height: 100%;
+  color: white;
+  padding-top: 2%;
+}
+.post-page-text-right{
+  padding-left:4%;
+} */
+
+#ad-cont{
+  margin:30px 7%;
+  width: 86%;
+}
+#ad{
+  padding: 0;
+  height: 300px;
+  margin: 30px 0;
+}
+#ad img {
+  width: 100%;
+  height: 100%;
+  margin: 0 ;
+  display: block;
+  object-fit: cover;
+}
+#ad-link{
+  margin: 0 6%;
+  padding: 0 0 ;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 88%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlay:hover{
+  opacity: 0.8;
+}
+.text {
+  width: 95%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-head{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom:70%;
+  font-size: 1.2rem;
+  font-style:italic;
+  font-weight: bold;
+}
+.text-desc{
+  top:10%;
+  font-size: 1rem;
+}
+.text-link{
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.space{
+  height:  410px;
+}
+
+.navigation-index{
+  background-image: url(https://hackersec.com/wp-content/uploads/2019/12/trabalhe-hacker-security.png) ;
+  background-size: cover;
+  background-position: center;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* #hero{
+  background-image: url(https://hackersec.com/wp-content/uploads/2019/12/trabalhe-hacker-security.png) ;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+} */
+
+.navbar.index-nav{
+  background: transparent !important;
+  /* position: absolute!important; */
+  transition: .5s ease;
+}
+.index-nav.scrolled{
+  background: #312F2F!important;
+  transition: .5s ease;
+}
+.navbar{
+  background: #312F2F!important;
+}
+.firstimage{
+  height: 400px;
+}
+
+/* .navbar{
+  height: 55px;
+
+}
+.navbar .navbar-brand img{
+  height:55px;
+} */
+
+.carousel-item{
+  height: 260px;
+}
+.carousel-item img{
+  position: absolute;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  height: 300px;
+}
+
+.site-footer
+{
+  margin-top:150px;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+  position: relative;
+  margin-bottom: 0;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin-top:20px;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

@@ -1,0 +1,60 @@
+<%- include("./partials/header") %>
+
+<%- include("./partials/navbar") %>
+
+<h1 id="post-page-head">Etkinlikler</h1>
+<% var x=1; %>
+
+<div class="container">
+  <div class="row" id="post-row" >
+    <% posts.forEach(function(post){ %>
+    <% if(x==1){ %>
+    <div class="col-md-10 col-sm-12" id="post-single">
+      <div class="row" id="post-row-inside">
+        <div class="col-5" id="post-image">
+          <img src="<%= post.image %>" id="post-image-inside" alt="">
+        </div>
+        <div class="col-7" style="height:100%;">
+          <div id="post-text">
+            <p id="post-header"><%= post.name%></p>
+            <p><%= post.description %></p>
+          </div>
+          <div id="post-button">
+            <button type="button" class="btn btn-outline-light">Görüntülemek için tıkla...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <%  x=2;      %>
+    <%  } else {  %>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-10 col-sm-12" id="post-single">
+      <div class="row" id="post-row-inside">
+        <div class="col-7" style="height:100%;">
+          <div id="post-text">
+            <p id="post-header"><%= post.name%></p>
+            <p><%= post.description %></p>
+          </div>
+          <div id="post-button">
+            <button type="button" href="/" class="btn btn-outline-light">Görüntülemek için tıkla...</button>
+          </div>
+        </div>
+        <div class="col-5" id="post-image">
+          <img src="<%= post.image %>" id="post-image-inside" alt="">
+        </div>
+      </div>
+    </div>
+    <%    x=1;    %>
+    <%  }         %>
+    <%  });       %>
+  </div>
+</div>
+
+
+
+
+
+<%- include("./partials/footer") %>
