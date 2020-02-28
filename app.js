@@ -6,6 +6,7 @@ var express = require("express"),
     LocalStrategy = require("passport-local");
     bodyParser = require("body-parser");
 var app = express();
+var port=3000;
 
 //database connection
 mongoose.connect( "mongodb+srv://sknrk:emre2780323@cluster0-tkorh.mongodb.net/test?retryWrites=true&w=majority",
@@ -178,6 +179,6 @@ function isLoggedIn(req,res,next){
   res.redirect("/login");
 }
 
-app.listen(3000,function(){
-  console.log("Server started on port 3000");
+app.listen(process.env.PORT || 5000, process.env.IP, function(){
+    console.log(`Example app listening on port ${port}!`);
 });
