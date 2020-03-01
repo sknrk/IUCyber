@@ -1,0 +1,25 @@
+<%- include("./partials/header") %>
+
+<%- include("./partials/navbar") %>
+
+<div class="container">
+
+      <h1 style="text-align:center;">Yeni Post Olustur</h1>
+
+      <div style="width: 30%; margin : 25px auto;">
+
+        <%= typeof msg != 'undefined' ? msg : '' %>
+        <form action="/posts/<%=post._id%>/uploadphotos" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <input type="file" name="myImages" multiple>
+            <button type="submit" name="button">Submit</button>
+          </div>
+        </form>
+      </div>
+
+<div class="space">
+
+</div>
+
+</div>
+<%- include("./partials/footer") %>

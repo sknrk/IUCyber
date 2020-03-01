@@ -3,9 +3,38 @@
 
 
 <div id="contact-container" class="container">
-  <p id="contact-head-text">İletişim</p>
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
+  <p id="contact-head-text">İletişime Geç</p>
+  <div class="row">
+    <div class="col-md-3 col-sm-0">
+    </div>
+    <div class="col-md-6">
+      <form action="iletisim" method="post">
+
+            <div class="form-group">
+              <input class="form-control" type="text" name="name" placeholder="İsim">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="lastName" placeholder="Soyisim">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="email" placeholder="E-posta">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="phoneNumber" placeholder="Telefon Numarası">
+            </div>
+            <div class="form-group">
+              <!-- <input class="form-control" type="text" name="text" placeholder="Mesajınız" > -->
+              <textarea class="form-control" name="text" rows="4" cols="80" placeholder="Mesajınız"></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-lg btn-primary btn-block">Gönder</button>
+            </div>
+      </form>
+    </div>
+    <div class="col-md-3 col-sm-0">
+    </div>
+  </div>
 </div>
 
 

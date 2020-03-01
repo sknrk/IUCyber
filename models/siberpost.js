@@ -2,8 +2,12 @@ var mongoose = require("mongoose");
 
 var siberpostSchema = new mongoose.Schema({
   name: String,
-  image : String,
-  description : String
+  date : String,
+  image: String,
+  tur: String,
+  description : String,
+  postDetail: String,
+  images : Array
 });
 
 

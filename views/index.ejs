@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="/posts">Etkinlikler</a></li>
-        <li class="nav-item"><a class="nav-link" href="/hakkinda">Hakkında</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="/hakkinda">Hakkında</a></li> -->
         <li class="nav-item"><a class="nav-link" href="/iletisim">İletişim</a></li>
       </ul>
       <ul class="navbar-nav navbar-rg">
@@ -28,32 +28,6 @@
 
 </div>
 
-<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="/images/foto1.png" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/foto2.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/foto3.png" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
 <div class="container" id="ad-cont">
 
   <div class="row" style="margin:0;width:100%;padding:0;">
@@ -61,7 +35,12 @@
     <div  id="ad" class="col-md-4 col-sm-12">
       <div id="ad-link">
         <a href="/posts/<%=posts[0]._id%>/show" >
-          <img src="<%=posts[0].image%>" alt="">
+          <img src="<%=posts[0].images[0]%>" alt="">
+          <div class="ad-shader">
+            <div id="ad-shader-text">
+              <p><%=posts[0].name%></p>
+            </div>
+          </div>
           <div class="overlay">
             <div class="text">
               <div class="text-head">
@@ -75,6 +54,7 @@
               </div>
             </div>
           </div>
+
         </a>
       </div>
     </div>
@@ -82,7 +62,12 @@
     <div  id="ad" class="col-md-4 col-sm-12">
       <div id="ad-link">
         <a href="/posts/<%=posts[1]._id%>/show">
-          <img src="<%=posts[1].image%>" alt="">
+          <img src="<%=posts[1].images[0]%>" alt="">
+          <div class="ad-shader">
+            <div id="ad-shader-text">
+              <p><%=posts[1].name%></p>
+            </div>
+          </div>
           <div class="overlay">
             <div class="text">
               <div class="text-head">
@@ -103,7 +88,12 @@
     <div  id="ad" class="col-md-4 col-sm-12">
       <div id="ad-link">
         <a href="/posts/<%=posts[2]._id%>/show">
-          <img src="<%=posts[2].image%>" alt="">
+          <img src="<%=posts[2].images[0]%>" alt="">
+          <div class="ad-shader">
+            <div id="ad-shader-text">
+              <p><%=posts[2].name%></p>
+            </div>
+          </div>
           <div class="overlay">
             <div class="text">
               <div class="text-head">
@@ -127,29 +117,13 @@
 
 
 
-<div class="container" id="index-who-row">
+<div class="container" id="index-who-container">
     <div class="row">
       <div class="col-12" >
         <p id="index-who-head">Hakkımızda</p>
         <img src="/images/logo2.png" id="index-who-logo">
         <p id="index-who-text">Bacon ipsum dolor amet prosciutto sausage brisket tongue swine. Beef rump short loin, chuck capicola ham hock doner. Fatback ham hock flank, landjaeger shank biltong ribeye kielbasa filet mignon meatball. Andouille spare ribs short ribs shoulder. Bresaola boudin turkey, ribeye burgdoggen tongue ground round chuck kevin landjaeger shank flank sausage doner bacon. Rump ground round pork belly beef salami strip steak boudin alcatra tri-tip jerky bacon picanha porchetta landjaeger. Salami shoulder turkey, pork chop tenderloin short ribs porchetta.</p>
       </div>
-      <!-- <div class="col-xl-4" style="border-left:1px black solid;">
-        <h1>Etkinlikler</h1>
-        <% for (var i = 0; i < posts.length; i++) { %>
-        <div class="card" style="width: 18rem;margin-top:12px;">
-          <img src="<%=posts[i].image%>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><%= posts[i].name %></h5>
-            <p class="card-text"><%= posts[i].description %></p>
-            <a href="/posts/<%=posts[i]._id%>/show" class="btn btn-primary">Etkinliği İncele</a>
-            <% if(currentUser){ %>
-            <a href="/posts/<%=posts[i]._id%>/delete" class="btn btn-danger"> Sil</a>
-            <%} %>
-          </div>
-        </div>
-        <% }; %>
-      </div> -->
     </div>
 </div>
 
