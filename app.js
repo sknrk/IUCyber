@@ -9,6 +9,7 @@ var express = require("express"),
     path = require("path"),
     Contact =  require("./models/contacts");
 var app = express();
+var port=3000;
 
 //database connection
 mongoose.connect( "mongodb+srv://sknrk:emre2780323@cluster0-tkorh.mongodb.net/test?retryWrites=true&w=majority",
