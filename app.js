@@ -11,8 +11,12 @@ var express = require("express"),
 var app = express();
 var port=3000;
 
+var databaseUsername="";
+var databasePas="";
+
+
 //database connection
-mongoose.connect( "mongodb+srv://sknrk:emre2780323@cluster0-tkorh.mongodb.net/test?retryWrites=true&w=majority",
+mongoose.connect( "mongodb+srv://"+databaseUsername+":"+databasePas+"@cluster0-tkorh.mongodb.net/test?retryWrites=true&w=majority",
 {
 useUnifiedTopology: true,
 useNewUrlParser: true,
